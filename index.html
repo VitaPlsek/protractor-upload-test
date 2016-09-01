@@ -1,0 +1,23 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"/>
+  <script src="/app.js"></script>
+</head>
+<body class="container">
+<form id="file-form" class="well">
+  <div class="form-group">
+    <label for="file">File</label>
+    <input type="file" class="form-control" id="file">
+  </div>
+
+  <button id="send-button" type="button" class="btn btn-success" onclick="submitForm()">Send</button>
+</form>
+
+<div id="file-info" class="well hidden">
+  <h2>File uploaded</h2>
+  <p id="file-name"></p>
+  <p id="file-size"></p>
+</div>
+
+</body>
+</html>
