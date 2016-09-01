@@ -20,5 +20,6 @@ describe('file upload', function() {
     expect(infoPO.getTitle()).toBe('File uploaded');
     expect(infoPO.getFileName()).toBe(FILE_FOR_UPLOAD);
     expect(infoPO.getFileSize()).toMatch('16');
+    expect(infoPO.getFileContent()).toMatch('File content ...');
   });
 });
